@@ -1,0 +1,28 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "node express handlebars",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobYolles/burger.git"
+  },
+  "keywords": [
+    "homework"
+  ],
+  "author": "Jake Yolles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacobYolles/burger/issues"
+  },
+  "homepage": "https://github.com/JacobYolles/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
