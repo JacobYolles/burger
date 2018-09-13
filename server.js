@@ -8,6 +8,8 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Parse application/x-www-form-urlencoded
+// Serve static content for the app from the 'public' directory
+app.use(express.static(process.cwd() + '/public'));
 //extended true: allow a deep dive.
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -26,6 +28,14 @@ var connection = mysql.createConnection({
   password: "root",
   database: "burgers_db"
 });
+
+// Import routes and give the server access to them
+var routes = require('./controllers/burgers_controllers.js');
+
+app.use('/', routes);
+
+
+
 
 connection.connect(function(err) {
   if (err) {
