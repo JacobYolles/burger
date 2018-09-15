@@ -1,10 +1,19 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "node express handlebars",
+  "description": "Burger APp",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "nodemon server.js"
+    "test": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +27,5 @@
   "bugs": {
     "url": "https://github.com/JacobYolles/burger/issues"
   },
-  "homepage": "https://github.com/JacobYolles/burger#readme",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "mysql": "^2.16.0"
-  }
+  "homepage": "https://github.com/JacobYolles/burger#readme"
 }

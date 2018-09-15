@@ -1,0 +1,62 @@
+.row {
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+#finishedburger {
+ border: blue;
+ padding: 20%;
+}
+
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+  }
+  
+  input {
+    color: #000 ;
+  }
+  
+  .uneaten-title {
+    text-align: center;
+  }
+  
+  #pacman-title {
+    margin-top: 10px;
+  }
+  
+  #burger.jpeg {
+    float: left;
+  }
+  
+  #ghost {
+    float: right;
+  }
+  
+  ul.uneaten li{
+    display: inline-block;
+  
+    list-style-type:none;
+    margin: 10px;
+  }
+  
+  #update {
+  text-align: center;
+  }
+  
+  #eaten {
+    text-align: center;
+  }
+  
+  .burgers-eaten {
+    overflow-y: scroll;
+  }
+  
+  button {
+    background-color: #000;
+    color: yellow;
+  }
