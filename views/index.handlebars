@@ -5,11 +5,11 @@
   </div>
   <h2 class="uneaten-title">Current Burgers</h2>
   <ul class="uneaten">
-    <img id="pacman" src="./img/denverburger.jpeg" width="100px">
+    <img id="denverburger" src="./img/denverburger.jpeg" width="100px" height="100px">
     {{#each burgers}}
       {{#unless this.devoured}}
         <li>
-          <img src="./img/burger.jpeg" width="100px">
+          <img src="./img/burger.jpeg" width="100px" height="100px">
           <p>
             {{this.burger_name}}
           </p>
@@ -21,7 +21,7 @@
       {{/unless}}
     {{/each}}
   </ul>
-  <img id="ghost" src="../img/ghost.png" width="150px">
+  <img id="ghost" src="./img/mushroom.jpeg" width="100px" height="100px">
 </div>
 
 <div class="row">
@@ -61,48 +61,3 @@
     <div class="col-md-2"></div>
 </div>
 
-{{!-- <h1>Eat-Da-Burger!</h1>
-
-<main>
-  <div class="container">
-    <div class="row">
-      <div class="col s6">
-        {{#each burgers}}
-          {{#unless this.devoured}}
-            <div>
-              <form action="/burgers/update/{{this.id}}?_method=PUT" method="POST">
-              
-                <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
-              </form>
-            </div>
-          {{/unless}}
-        {{/each}}
-      </div>
-
-      <div class="col s6">
-         <h2 class="eaten-title">Eaten Burgers</h2>
-        {{#each burgers}}
-          {{#if this.devoured}}
-            <div class='burgerEaten'>
-              <div>
-                {{this.burger_name}}
-                
-              </div>
-            </div>
-          {{/if}}
-        {{/each}}
-      </div>
-    </div>
-  </div>
-</main>
-
-<h2>Add A Burger Option</h2>
-
-<div class="row">
-  <div class="col s12">
-    <form action="/burgers" method="POST">
-      <input type="text" id="name" name="burger_name" placeholder="Uber Delicious Burger">
-      <button type="submit" class="addBurgerButton">Add The Burger</button>
-    </form>
-  </div>
-</div> --}}
